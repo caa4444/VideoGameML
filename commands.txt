@@ -1,0 +1,5 @@
+cat runescape_pages_current.xml | tr -d '\n' >> noNewlines.txt
+
+grep -E -o "\{\{Infobox[^}]*}}" noNewlines.txt >> InfoboxOnly.txt
+
+grep -P -o "(?<=[^\{])\{\| class=&quot;wikitable.*?\|\}" noNewlines.txt >> tables.txt
