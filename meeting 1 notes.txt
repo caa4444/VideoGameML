@@ -1,0 +1,16 @@
+Initial approach (We can do the first 2 as soon as we get all the prices and import it):
+
+method 1: use the price of every time as features
+method 2: use the historical price as features
+method 3: use the historical prices of what we think is relevant
+	a: by category
+	b: by price correlations
+	c: using wiki link data
+
+
+to do for next time:
+	make and run price scraping script
+	parse out additional info from the wiki
+
+potential considerations:
+	GE updates are capped, so sudden price jumps may be shown as an increasing trend over months when it actually isn't
